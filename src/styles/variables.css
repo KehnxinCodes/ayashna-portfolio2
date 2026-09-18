@@ -1,0 +1,16 @@
+:root {
+  --cream: #F5F1EB;      /* primary background */
+  --offwhite: #FCFAF7;   /* secondary background */
+  --taupe: #B7A99A;      /* brand accent / borders */
+  --espresso: #292522;   /* primary text */
+  --gray: #77716B;       /* secondary text */
+  --terracotta: #B96F52; /* small accent — use sparingly */
+
+  --font-serif: 'DM Serif Display', serif;
+  --font-sans: 'Inter', sans-serif;
+
+  --max-width: 1240px;
+  --transition-slow: 0.4s ease;
+  --transition-medium: 0.35s ease;
+  --transition-fast: 0.3s ease;
+}
