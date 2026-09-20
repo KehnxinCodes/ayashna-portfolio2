@@ -4,7 +4,7 @@
 // ============================================================
 
 export const siteInfo = {
-  name: "AYASHNA SHANAYA",
+  name: "AYASHNA",
   role: "Freelance Video Editor",
   location: "Philippines",
   tags: ["Reels", "UGC", "Personal Brand", "Ads"],
