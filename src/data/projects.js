@@ -19,7 +19,6 @@
 
 export const PORTFOLIO_CATEGORIES = [
   "All",
-  "Personal Brand",
   "Healthcare",
   "Wellness",
   "UGC",
@@ -28,19 +27,6 @@ export const PORTFOLIO_CATEGORIES = [
 ];
 
 export const projects = [
-  {
-    id: "founder-story-wellness",
-    title: "Founder Story — Wellness Co.",
-    category: "Personal Brand",
-    client: "Wellness Studio Co.",
-    description:
-      "Story-driven short-form content designed to capture attention quickly while keeping the creator's personality at the center.",
-    thumbnail: null,
-    video: null,
-    year: 2026,
-    size: "large",
-    featured: true,
-  },
   {
     id: "product-launch-reel",
     title: "Product Launch Reel",
