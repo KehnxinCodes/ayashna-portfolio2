@@ -79,11 +79,11 @@ export const finalCta = {
 
 export const contact = {
   headline: ["Have a project", "in mind?"],
-  email: "hello@ayashna.com",
+  email: "ayashna.editor@gmail.com",
   socials: [
-    { label: "Instagram — @ayashna.edits", href: "#" },
-    { label: "TikTok — @ayashna.edits", href: "#" },
-    { label: "LinkedIn — /in/ayashna", href: "#" },
+    { label: "Instagram — @ayashna.editor", href: "#" },
+    { label: "TikTok — @videoeditor.yashna", href: "#" },
+    { label: "LinkedIn — /in/sherlynmae-socialvideoeditor", href: "#" },
   ],
 };
 
@@ -101,11 +101,11 @@ export const footer = {
     {
       title: "Social",
       links: [
-        { label: "Instagram", href: "#" },
-        { label: "TikTok", href: "#" },
-        { label: "LinkedIn", href: "#" },
+        { label: "https://www.instagram.com/ayashna.editor/", href: "#" },
+        { label: "https://www.tiktok.com/@videoeditor.yashna?lang=en00:41 AM", href: "#" },
+        { label: "https://www.linkedin.com/in/sherlynmae-socialvideoeditor/", href: "#" },
       ],
     },
   ],
-  copyright: "© 2026 Ayashna. All rights reserved.",
+  copyright: "© 2026 Ayashna & Kehnxin. All rights reserved.",
 };
