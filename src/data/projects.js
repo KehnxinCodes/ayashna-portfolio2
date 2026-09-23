@@ -20,10 +20,9 @@
 export const PORTFOLIO_CATEGORIES = [
   "All",
   "Personal Brand",
-  "Healthcare",
-  "Wellness",
+  "Healthcare & Wellness",
   "UGC",
-  "E-commerce",
+  "FBA Marketing",
   "Promotional",
 ];
 
@@ -55,7 +54,7 @@ export const projects = [
   {
     id: "clinic-explainer-series",
     title: "Clinic Explainer Series",
-    category: "Healthcare",
+    category: "Healthcare & Wellness",
     client: "Bright Smile Dental",
     description: "Clear, trust-building explainer videos for patient education.",
     thumbnail: null,
@@ -77,7 +76,7 @@ export const projects = [
   {
     id: "product-feature-cut",
     title: "Product Feature Cut",
-    category: "E-commerce",
+    category: "FBA Marketing",
     client: "Nomad Goods",
     description: "Product-focused edit highlighting key features and benefits.",
     thumbnail: null,
@@ -88,7 +87,7 @@ export const projects = [
   {
     id: "studio-brand-film",
     title: "Studio Brand Film",
-    category: "Wellness",
+    category: "Healthcare & Wellness",
     client: "Flow Yoga Studio",
     description: "Brand film capturing the studio's atmosphere and community.",
     thumbnail: null,
