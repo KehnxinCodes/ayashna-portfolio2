@@ -44,11 +44,10 @@ export const about = {
 };
 
 export const industries = [
-  "Healthcare",
-  "Wellness",
+  "Healthcare & Wellness",
   "Personal Brands",
   "Service Businesses",
-  "E-commerce",
+  "FBA Marketing",
   "Content Creators",
 ];
 
@@ -80,10 +79,23 @@ export const finalCta = {
 export const contact = {
   headline: ["Have a project", "in mind?"],
   email: "ayashna.editor@gmail.com",
+
   socials: [
-    { label: "Instagram — @ayashna.editor", href: "#" },
-    { label: "TikTok — @videoeditor.yashna", href: "#" },
-    { label: "LinkedIn — /in/sherlynmae-socialvideoeditor", href: "#" },
+    {
+      label: "Instagram — @ayashna.editor",
+      href: "https://www.instagram.com/ayashna.editor/",
+      external: true,
+    },
+    {
+      label: "TikTok — @videoeditor.yashna",
+      href: "https://www.tiktok.com/@videoeditor.yashna",
+      external: true,
+    },
+    {
+      label: "LinkedIn — /in/sherlynmae-socialvideoeditor",
+      href: "https://www.linkedin.com/in/sherlynmae-socialvideoeditor/",
+      external: true,
+    },
   ],
 };
 
@@ -92,20 +104,50 @@ export const footer = {
     {
       title: "Site",
       links: [
-        { label: "Work", href: "#work" },
-        { label: "Services", href: "#services" },
-        { label: "About", href: "#about" },
-        { label: "Contact", href: "#contact" },
+        {
+          label: "Work",
+          href: "#work",
+          external: false,
+        },
+        {
+          label: "Services",
+          href: "#services",
+          external: false,
+        },
+        {
+          label: "About",
+          href: "#about",
+          external: false,
+        },
+        {
+          label: "Contact",
+          href: "#contact",
+          external: false,
+        },
       ],
     },
+
     {
       title: "Social",
       links: [
-        { label: "https://www.instagram.com/ayashna.editor/", href: "#" },
-        { label: "https://www.tiktok.com/@videoeditor.yashna?lang=en00:41 AM", href: "#" },
-        { label: "https://www.linkedin.com/in/sherlynmae-socialvideoeditor/", href: "#" },
+        {
+          label: "Instagram",
+          href: "https://www.instagram.com/ayashna.editor/",
+          external: true,
+        },
+        {
+          label: "TikTok",
+          href: "https://www.tiktok.com/@videoeditor.yashna",
+          external: true,
+        },
+        {
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/in/sherlynmae-socialvideoeditor/",
+          external: true,
+        },
       ],
     },
   ],
+
   copyright: "© 2026 Ayashna & Kehnxin. All rights reserved.",
 };
