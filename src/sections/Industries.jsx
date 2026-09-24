@@ -1,4 +1,3 @@
-@ -0,0 +1,57 @@
 import { useRef, useState } from "react";
 import { industries } from "../data/siteContent";
 
