@@ -1,5 +1,8 @@
 import { contact } from "../data/siteContent";
 
+const gmailComposeUrl = (email) =>
+  `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+
 export default function Contact() {
   return (
     <section className="alt" id="contact">
@@ -13,9 +16,22 @@ export default function Contact() {
           ))}
         </h2>
         <div className="contact-links">
-          <a href={`mailto:${contact.email}`}>{contact.email}</a>
+          <a
+            href={gmailComposeUrl(contact.email)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {contact.email}
+          </a>
           {contact.socials.map((s) => (
-            <a key={s.label} href={s.href}>{s.label}</a>
+            <a
+              key={s.label}
+              href={s.href}
+              target={s.external ? "_blank" : undefined}
+              rel={s.external ? "noopener noreferrer" : undefined}
+            >
+              {s.label}
+            </a>
           ))}
         </div>
       </div>
