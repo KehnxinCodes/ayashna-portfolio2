@@ -1,3 +1,4 @@
+@ -0,0 +1,353 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -126,13 +127,38 @@ h1.headline { font-size: clamp(48px, 9vw, 118px); line-height: 0.98; letter-spac
 .portrait img { width: 100%; height: 100%; object-fit: cover; }
 
 /* ===== INDUSTRIES ===== */
+.industries-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 30px; gap: 20px;
+}
+.industries-arrows { display: flex; gap: 10px; }
+.industries-arrow-btn {
+  width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--taupe);
+  color: var(--espresso); font-size: 18px; line-height: 1; display: flex; align-items: center; justify-content: center;
+  transition: all var(--transition-fast);
+}
+.industries-arrow-btn:hover:not(:disabled) { background: var(--espresso); color: var(--offwhite); border-color: var(--espresso); }
+.industries-arrow-btn:disabled { opacity: 0.3; cursor: default; }
+
+.industries-viewport {
+  position: relative;
+  margin: 0 -8px;
+  padding: 0 8px;
+}
 .industries-track {
-  display: flex; gap: 60px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none;
+  display: flex; gap: 60px; overflow-x: auto; padding: 6px 8px 14px; scrollbar-width: none;
   font-family: var(--font-serif); font-size: clamp(28px, 4vw, 44px); color: var(--taupe);
 }
 .industries-track::-webkit-scrollbar { display: none; }
-.industries-track span { white-space: nowrap; flex-shrink: 0; }
+.industries-track span { white-space: nowrap; flex-shrink: 0; cursor: pointer; transition: color var(--transition-fast); }
 .industries-track span.active { color: var(--espresso); }
+.industries-fade {
+  position: absolute; top: 0; bottom: 14px; width: 64px; pointer-events: none;
+}
+.industries-fade.left { left: 0; background: linear-gradient(to right, var(--cream), rgba(245, 241, 235, 0)); }
+.industries-fade.right { right: 0; background: linear-gradient(to left, var(--cream), rgba(245, 241, 235, 0)); }
+.alt .industries-fade.left { background: linear-gradient(to right, var(--offwhite), rgba(252, 250, 247, 0)); }
+.alt .industries-fade.right { background: linear-gradient(to left, var(--offwhite), rgba(252, 250, 247, 0)); }
 
 /* ===== SERVICES ===== */
 .service-row {
@@ -294,6 +320,7 @@ footer { border-top: 1px solid rgba(183, 169, 154, 0.4); padding: 50px 0 30px; }
 
   .industries-track { gap: 36px; }
   .industries-track span { font-size: clamp(22px, 7vw, 30px); }
+  .industries-arrows { display: none; }
 
   .service-row { flex-direction: column; align-items: flex-start; gap: 8px; padding: 24px 0; }
   .service-left { gap: 16px; }
